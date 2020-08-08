@@ -3,12 +3,12 @@ import React from 'react'
 
 const NavBar = () => {
   return <nav className="navbar">
-    <div>
-      Logo
+    <div className="links">
+      <a href="#">About</a>
+      <a href="#">Skills</a>
+      <a href="#">Projects</a>
     </div>
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
+    <div>Logo</div>
   </nav>
 }
 

@@ -3,14 +3,12 @@ import Clouds from './styles/images/Clouds.svg'
 import NavBar from './components/NavBar'
 import ProjectCard from './components/ProjectCard'
 import 'css-doodle'
-// import MaterialTheme from './components/MaterialTheme'
-// import { makeStyles } from '@material-ui/core/styles'
-
 
 const App = () => {
   return (
-    <>
-    <css-doodle grid>{`
+    <main>
+      <div className="circleContainer">
+        <css-doodle>{`
     :doodle {
       @grid: 20 / 100vmax;
       @shape: circle;
@@ -46,8 +44,9 @@ const App = () => {
     // );
     // transform: scale(@rand(.4, .9));
 )`}</css-doodle>
-    <NavBar />
-    </>
+      </div>
+      <NavBar />
+    </main>
   )
 }
 
