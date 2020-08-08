@@ -12,7 +12,10 @@ module.exports = {
     rules: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
-      { test: /\.s(a|c)ss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] }
+      { test: /\.s(a|c)ss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
+      { test: /\.(png|jp(e*)g|svg|gif)$/, loader: 'file-loader', options: { name: 'images/[hash]-[name].[ext]' } },
+      { test: /\.svg$/, loader: 'react-svg-loader', options: { jsx: true } }
+
     ]
   },
   devServer: {
