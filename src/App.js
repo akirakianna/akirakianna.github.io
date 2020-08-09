@@ -1,5 +1,4 @@
 import React from 'react'
-import Clouds from './styles/images/Clouds.svg'
 import NavBar from './components/NavBar'
 import ProjectCard from './components/ProjectCard'
 import 'css-doodle'
@@ -7,6 +6,7 @@ import 'css-doodle'
 const App = () => {
   return (
     <main>
+      <ProjectCard />
       <div className="circleContainer">
         <css-doodle>{`
     :doodle {

@@ -1,7 +1,10 @@
 import React from 'react'
 
 const ProjectCard = () => {
-  return <h1> Projects</h1>
+  return <div className ="diamond"> 
+    <h1 className="test">Projects</h1>
+  </div>
+  
 }
 
 export default ProjectCard
