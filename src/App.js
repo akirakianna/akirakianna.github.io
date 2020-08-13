@@ -14,8 +14,7 @@ const App = () => {
         <span>M</span>
         <span>I</span>
         <span>N</span>
-        <span>G</span>
-        <span> </span>
+        <span>G </span>
         <span>S</span>
         <span>O</span>
         <span>O</span>
