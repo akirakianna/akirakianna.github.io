@@ -8,9 +8,6 @@ import 'css-doodle'
 import styled from 'styled-components'
 
 
-
-
-
 const App = () => {
 
   return (
