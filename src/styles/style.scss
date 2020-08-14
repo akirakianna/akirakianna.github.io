@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 
 body {
   min-height: 100vh;
   background-color: #80b692;
   margin: 0;
 }
+
+#a{
+   position:fixed;
+   top:0;
+   z-index:-99;
+}
+
+.panels {
+  position:relative;
+  height:100%;
+  min-height:100%;
+  width:100%;
+  z-index:1000;
+}
+
+//! CUT OFF
 
 .container{
   height: 90px;
@@ -167,10 +184,10 @@ span:nth-child(10){
   }
 }    
 
-.circleContainer {
-  display: flex;
-  justify-content: center;
-}
+// .circleContainer {
+//   display: flex;
+//   justify-content: center;
+// }
 
 
 .diamond {

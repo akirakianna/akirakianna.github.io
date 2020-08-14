@@ -1,14 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Doodle = () => {
   return (
-    <main>
-      <div className="circleContainer">
-        <css-doodle>{`
+    <Container>
+      <css-doodle>{`
     :doodle {
       @grid: 20 / 100vmax;
       @shape: circle;
       overflow: hidden;
+      
     }
     @even {
       @shape: rhombus;
@@ -21,12 +22,24 @@ const Doodle = () => {
       );
       transform: scale(5) rotate(90deg);
     }
-    :container {
-      background: #fff;
+    // :container {
+    //   background: #fff;
 )`}</css-doodle>
-      </div>
-    </main>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+`
+
 
 export default Doodle
