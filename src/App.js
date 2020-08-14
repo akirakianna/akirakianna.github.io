@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
 import NavBar from './components/NavBar'
 import Doodle from './components/CssDoodle'
 import About from './components/About'
@@ -7,6 +6,7 @@ import About from './components/About'
 import 'css-doodle'
 import styled from 'styled-components'
 
+// change
 
 const App = () => {
 
